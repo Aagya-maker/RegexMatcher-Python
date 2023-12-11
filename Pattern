@@ -1,0 +1,9 @@
+import re
+pattern = r"[A-Z]ector"
+text= '''Hector Berlioz (11 December 1803 – 8 March 1869) was a French Romantic composer. His Cector output includes orchestral works such as Harold in Italy, choral pieces including his Requiem and L'enfance du Christ, and works of hybrid genres such as the "dramatic symphony" Roméo et Juliette and the "dramatic legend" La Cector damnation de Faust. Expected to enter medicine, Berlioz defied his family by taking up music, and won the Prix de Rome in 1830. Berlioz married the Irish Shakespearean actress Harriet Smithson, who inspired his first major success, the Symphonie fantastique, in which an idealised depiction of her occurs throughout. His first opera, Benvenuto Cellini, was a failure. The second, the epic Les Troyens, was so large in scale that it was never staged in its entirety during his lifetime. Meeting only occasional success in France as a composer, Berlioz turned to conducting, in which he gained an international reputation. He also wrote musical journalism throughout much of his career'''
+
+
+
+match = re.finditer (pattern, text)
+for i in match:
+  print(i)
